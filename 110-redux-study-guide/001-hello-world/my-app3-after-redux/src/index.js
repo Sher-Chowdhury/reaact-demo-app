@@ -30,16 +30,8 @@ const store = configureStore({ reducer: counterReducer })
 
 
 function Counter() {
-    // State: a counter value
-    // const [counter, setCounter] = React.useState(0)
-    // console.log(counter)
 
-    // Action: code that causes an update to the state when something happens
-    // const increment = () => {
-    //     setCounter(prevCounter => prevCounter + 1)
-    // }
-
-    // // This is an action-creator function
+    // This is an action-creator function
     const increment = () => {
         return {
             type: 'counter/increment'
@@ -47,18 +39,15 @@ function Counter() {
     }
 
     const incrementor = () => {
-        // This sends this action object to the store. The store then forwards this object (along with the current state object) to the reducer function.
+        // This runs the action-creator to get an new action object. It then forwards this object (along with the current state object) to the reducer function.
         store.dispatch(increment())
         console.log(store.getState())
     }
 
-
-
-
     // This is a selector function
     const selectCounterValue = state => state.value
 
-    // This calls the selector function for us, passes in the current state as an argument for us. It also tells react to refresh the screen
+    // This calls the selector function for us, passes in the current state as an argument for us. It also tells react to rerun the enclosing component function again. 
     // https://react-redux.js.org/api/hooks#useselector
     const count = useSelector(selectCounterValue);
 
