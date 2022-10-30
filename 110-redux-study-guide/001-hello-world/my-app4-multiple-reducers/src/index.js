@@ -53,8 +53,8 @@ function Counter() {
     // This is a selector function
     const selectCounterValue = state => state.MyCounterComponentReducer.value
 
-    // This calls the selector function for us, passes in the current state as an argument for us. It also tells react to rerun the enclosing component function again.
-    // https://react-redux.js.org/api/hooks#useselector
+    // This calls the selector function for us, The `useSelector()` also automatically runs whenever the redux-store has been updated.
+    // If the returning value has changed from last time, then `useSelector()` runs triggers its component to do a full re-render.
     const count = useSelector(selectCounterValue);
 
     // View: the UI definition

@@ -54,5 +54,13 @@ Any time an action has been dispatched and the Redux store has been updated, use
 ```
 
 
+## my-app4-multiple-reducers
+In my-app3, we had one component and one reducer function. The redux store was only
+configured with just one reducer function. 
+
+In reality you're likely to have multiple multiple components, each with their own reducer function. 
+
+This demo is the same as my-app3, but this time it shows how to extend our store to accept multiple reducers. 
+
 
 
