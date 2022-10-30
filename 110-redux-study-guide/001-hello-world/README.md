@@ -60,7 +60,13 @@ configured with just one reducer function.
 
 In reality you're likely to have multiple multiple components, each with their own reducer function. 
 
-This demo is the same as my-app3, but this time it shows how to extend our store to accept multiple reducers. 
+This demo is the same as my-app3, but this time it shows how to extend our store to accept multiple reducers. This is more to adding more organisation 
+to your store, i.e. it a bit like adding partitions. 
+
+Note: if you want component-a to crud component-b's data, then you need to update component-a's reducer function to process component-b's action-object.
+this is actually demod in the my-app5.
 
 
+## my-app5-multiple-components
+This shows how 2 components crud the same data. 
 
