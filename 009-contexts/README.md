@@ -2,8 +2,8 @@ ref - https://reactjs.org/docs/context.html
 
 There are 3 ways to share data between components:
 
-1. Lifting state approach - https://reactjs.org/docs/lifting-state-up.html. This basically shares state-date via props. This approach isn't recommend, because it is quite crude. 
-2. Using contexts - this is a newer approach, as described here.
+1. Lifting state approach - https://reactjs.org/docs/lifting-state-up.html. This basically shares state-date via props. This approach isn't recommend, and is only suitable for basic use cases. 
+2. Using contexts - this is a newer approach, as described here - https://reactjs.org/docs/context.html
 3. Using [Redux](https://redux.js.org/) - This is the most powerful option, and is the recommended approach. 
 
 
