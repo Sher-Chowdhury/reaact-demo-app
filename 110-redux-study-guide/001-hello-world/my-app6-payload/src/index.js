@@ -9,7 +9,7 @@ import { configureStore } from '@reduxjs/toolkit'
 
 const initialState = {
     value: 0,
-    feedbackInfo: 'no-buttons'
+    feedbackInfo: 'no-buttons-click-yet'
 }
 
 function counterReducer(state = initialState, action) {
@@ -29,7 +29,8 @@ function counterReducer(state = initialState, action) {
         return {
             ...state,
             // and update the copy with the new value
-            value: state.value * 2
+            value: state.value * 2,
+            feedbackInfo: action.payload
         }
     }
 
@@ -126,6 +127,11 @@ function CustomerFeedback() {
     // This calls the selector function for us, The `useSelector()` also automatically runs whenever the redux-store has been updated.
     // If the returning value has changed from last time, then `useSelector()` runs triggers its component to do a full re-render.
     const FeedbackInfo = useSelector(selectFeedbackValue);
+
+    if (FeedbackInfo === 'no-buttons-click-yet') {
+        // If so, make a copy of `state`
+        return null
+    }
 
     // View: the UI definition
     return (
