@@ -45,4 +45,9 @@ the props name, `className`, is a special name reserved for css purposes - https
 
 This `className` attributes corresponds to html's `class` attribute. 
 
+You can set default vlaues for props and also add type-checking for your props (e.g. throw error if integer value passed in to prop that's expecting a string). Thats possble using:
+`propTypes`
+- `defaultProps`
+For more info, see https://reactjs.org/docs/typechecking-with-proptypes.html
+
 

@@ -16,3 +16,11 @@ However you can debug the app via chrome:
 3. Open the chrome developer tools
 4. Go to the sources tab, and you can add breakpoints their. 
 5. Also all `console.log(...)` will appear in the consoles tab. 
+
+
+
+
+# deploying react app for the public to use
+
+https://github.com/Sher-Chowdhury/host-react-app-on-github-pages
+
