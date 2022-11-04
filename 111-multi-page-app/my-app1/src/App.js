@@ -4,12 +4,28 @@ import {
     BrowserRouter as Router,
     Route,
     Routes,
+    Link,
 } from "react-router-dom";
 
 export default function App() {
     return (
         <Router>
-           <Routes>
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">About</Link>
+                        </li>
+                        <li>
+                            <Link to="/users">Users</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <Routes>
                 <Route
                     path="/about"
                     element={<About/>}
@@ -32,7 +48,6 @@ function Home() {
 }
 
 function About() {
-
     return <h2>About</h2>;
 }
 
