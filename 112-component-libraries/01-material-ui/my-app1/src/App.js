@@ -8,7 +8,7 @@ import {
 
 import NavMenu from './common-components/navMenu'
 
-import About from './pages/about/aboutPageTitle';
+import About from './pages/about/_about';
 import Home from './pages/home/homePageTitle';
 import Users from './pages/users/usersPageTitle';
 
