@@ -1,7 +1,6 @@
 import React from "react";
 
 
-export default function Users() {
+export default function UsersPageTitle() {
     return <h2>User</h2>;
 }
-

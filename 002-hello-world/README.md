@@ -24,3 +24,5 @@ However you can debug the app via chrome:
 
 https://github.com/Sher-Chowdhury/host-react-app-on-github-pages
 
+See - https://github.com/gitname/react-gh-pages
+

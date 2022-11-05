@@ -8,9 +8,9 @@ import {
 
 import NavMenu from './common-components/navMenu'
 
-import About from './pages/about/aboutPageTitle';
-import Home from './pages/home/homePageTitle';
-import Users from './pages/users/usersPageTitle';
+import About from './pages/about/_about';
+import Home from './pages/home/_home';
+import Users from './pages/users/_users';
 
 
 export default function App() {
