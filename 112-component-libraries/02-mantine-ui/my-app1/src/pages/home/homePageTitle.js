@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default function HomePageTitle() {
+export default function Home() {
     return <h2>Home</h2>;
 }
 
