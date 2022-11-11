@@ -1,5 +1,7 @@
 ref - https://reactjs.org/docs/hello-world.html
 
+This is also a really good general guide of react - https://nextjs.org/learn/foundations/from-javascript-to-react 
+
 ## my-app
 This is the same as 001, but with `src/index.js` updated to show "hello world"
 
