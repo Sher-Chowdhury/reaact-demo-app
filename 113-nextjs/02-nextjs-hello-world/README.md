@@ -1,5 +1,7 @@
 # my-app1
 
+Ref - https://nextjs.org/learn/foundations/from-react-to-nextjs/getting-started-with-nextjs
+
 This is a hello-world nextjs app. 
 
 Notice, unlike ordinary react, there is no index.html
@@ -25,3 +27,5 @@ So to create faq.html, or about.html. we need to have the corresponding `faq.js`
 Hence, compared to standard [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html#recommended-toolchains), which is limited
 to creating a "single-page application", where that page gives the impression 
 that it's a "multi-page application", next.js offers a proper multi-page application.
+
+
