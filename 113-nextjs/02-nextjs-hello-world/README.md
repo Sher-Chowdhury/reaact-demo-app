@@ -4,6 +4,8 @@ Ref - https://nextjs.org/learn/foundations/from-react-to-nextjs/getting-started-
 
 This is a hello-world nextjs app. 
 
+This hello-world example only contains a single file of code! Which is the index.js file!
+
 Notice, unlike ordinary react, there is no index.html
 
 
@@ -27,5 +29,43 @@ So to create faq.html, or about.html. we need to have the corresponding `faq.js`
 Hence, compared to standard [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html#recommended-toolchains), which is limited
 to creating a "single-page application", where that page gives the impression 
 that it's a "multi-page application", next.js offers a proper multi-page application.
+
+
+Let's look at the index.js:
+
+```javascript
+import { useState } from 'react';
+
+// this is an internal component
+function Header({ title }) {
+    return <h1>{title ? title : 'Default title'}</h1>;
+}
+
+// this is the exported component. 
+// Since this is also the "default" react component, this is the first component that gets
+// executed when a user visits the homepage
+export default function HomePage() {
+    const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+
+    const [likes, setLikes] = useState(0);
+
+    function handleClick() {
+        setLikes(likes + 1);
+    }
+
+    return (
+        <div>
+            <Header title="Develop. Preview. Ship." />
+            <ul>
+                {names.map((name) => (
+                    <li key={name}>{name}</li>
+                ))}
+            </ul>
+
+            <button onClick={handleClick}>Like ({likes})</button>
+        </div>
+    );
+}
+```
 
 
