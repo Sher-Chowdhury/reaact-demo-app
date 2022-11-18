@@ -1,6 +1,7 @@
 # my-app1
 
-Ref - https://nextjs.org/learn/foundations/from-react-to-nextjs/getting-started-with-nextjs
+Ref: 
+- https://nextjs.org/learn/foundations/from-react-to-nextjs/getting-started-with-nextjs
 
 This is a hello-world nextjs app. 
 
@@ -44,6 +45,8 @@ function Header({ title }) {
 // this is the exported component. 
 // Since this is also the "default" react component, this is the first component that gets
 // executed when a user visits the homepage
+// We named this component "HomePage", however you can give it any name you want, it doesnt matter. 
+// The only thing that's important is that it's set as the default export, as mentioned here - https://nextjs.org/learn/basics/navigate-between-pages/pages-in-nextjs
 export default function HomePage() {
     const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
 
