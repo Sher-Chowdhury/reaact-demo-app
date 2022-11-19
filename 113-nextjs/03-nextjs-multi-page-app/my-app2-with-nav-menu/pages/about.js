@@ -1,7 +1,17 @@
 import { useState } from 'react';
+import Link from "next/link";
 
 function Header({ title }) {
     return <h1>{title ? title : 'Default title'}</h1>;
+}
+
+function NavMenu() {
+    return (
+        <ul>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/about">About</Link></li>
+        </ul>
+    );
 }
 
 export default function About() {
@@ -16,6 +26,8 @@ export default function About() {
     return (
         <div>
             <Header title="About" />
+            <NavMenu />
+
             <ul>
                 {names.map((name) => (
                     <li key={name}>{name}</li>

@@ -16,7 +16,8 @@ This app has 2 things that it's lacking:
 
 
 # my-app2
-https://nextjs.org/learn/basics/navigate-between-pages/link-component
+
+Ref - https://nextjs.org/learn/basics/navigate-between-pages/link-component
 
 
 
