@@ -11,6 +11,10 @@ as opposed to the approach used in the my-app1 demo. This approach gives the imp
 We can supply arguments to our components. That's done by specifying attributes for our custom html tags. 
 react will send these attributes to the component in the form of a single object, called "properties", aka props. 
 
+### my-app3-prop-types
+Ref - https://reactjs.org/docs/typechecking-with-proptypes.html
+This shows how to specify data types for prop settings, and how to make them required. 
+
 ### my-app4
 a component can be written in the form of a class, rather than a function.
 
