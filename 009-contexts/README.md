@@ -10,7 +10,7 @@ There are 3 ways to share data between components:
 ### my-app1 
 The context feature lets you pass props down the component tree without having to explicitly do it. 
 
-Ref - https://www.freecodecamp.org/news/react-context-for-beginners/#what-is-the-usecontext-hook
+Ref - [https://www.freecodecamp.org/news/react-context-for-beginners/#what-is-the-usecontext-hook](https://www.freecodecamp.org/news/react-context-for-beginners/#what-is-the-usecontext-hook)
 
 You can define the context at the project level using "export" or at a component level, if you want to limit's it scope
 to that component and it's children components only. 
