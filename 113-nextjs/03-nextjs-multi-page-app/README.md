@@ -15,9 +15,13 @@ This app has 2 things that it's lacking:
 - state data isn't preserved, i.e. like button presses gets reset when going from one page to another. 
 
 
-# my-app2
+# my-app2-with-nav-menu
 
 Ref - https://nextjs.org/learn/basics/navigate-between-pages/link-component
 
+like my-app2, but added a nav menu.
+
+
+# my-app3-with-nav-menu-refactored
 
 
