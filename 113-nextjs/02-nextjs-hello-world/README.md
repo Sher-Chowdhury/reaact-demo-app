@@ -3,6 +3,9 @@
 Ref: 
 - https://nextjs.org/learn/foundations/from-react-to-nextjs/getting-started-with-nextjs
 
+Note, I am using next version `12.2.3`, because the newer versions are a little buggy. 
+
+
 This is a hello-world nextjs app. 
 
 This hello-world example only contains a single file of code! Which is the index.js file!
