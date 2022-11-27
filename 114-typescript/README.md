@@ -1,2 +1,1 @@
-ref - https://www.typescriptlang.org/docs/handbook/2/basic-types.html
-
+typescript is covered here - https://github.com/Sher-Chowdhury/javascript_study_guide/tree/main
