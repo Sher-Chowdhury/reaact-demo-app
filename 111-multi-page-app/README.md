@@ -10,53 +10,17 @@ same as my-app1, but with all the codes a bit better organised into files and fo
 ## my-app3
 This is an alternative, to using the `react-router-dom` package. Here we use `express` to catch all the requests and direct to the main top level component. 
 
-Haven't got this my-app demo working yet. 
-
-```javascript
-
-const express = require('express')
-
-const app = express()
-
-let server
-
-server = http.createServer({}, app)
-
-// main react componentn
-function App(props) {
-
-    return (
-        <h1>"Hello world - " {props.endpoint}</h1>
-    );
-}
-
-function router(endpointRequested){
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-
-    root.render(
-        <React.StrictMode>
-            <App endpoint=endpointRequested />
-        </React.StrictMode>
-    );
-}
-
-const renderIndex = (req, res) => {
-
-}
-  // code to exract endpoint
-  requestedEndpoint = req.notSureAboutThisBit
-
-  app.get([
-    '/',
-    '/home',
-    '/about/*', 
-    '/about/careers',
-    '/about/careers/*',
-    '/contact'],
-    router(requestedEndpoint)
-  )
-
-  server.listen(8300, '0.0.0.0')
-
-
+```shell
+npm start
 ```
+
+
+Up until now, we have looked at Client-Side-Rendered (CSR) app. This is an example of server-side-rendered (SSR) app. 
+
+In CSR, code  like `process.env` won't work, you have to use the `window` object instead - https://developer.mozilla.org/en-US/docs/Web/API/Window
+
+Where-as SSR can use `process.env`, if actual code is run on the server side. 
+
+
+
+
