@@ -21,7 +21,8 @@ npm start
 ```
 
 `npx` just downloads the latest `create-react-app` [binary](https://www.npmjs.com/package/create-react-app) and uses it. 
-npx always gets the latest version. So you don't have to worry about getting the latest version. 
+npx always gets the latest version. So you don't have to worry about getting the latest version. I think if the `node_modules`
+folder exists in the current working directory, and this folder contains this binary, then it will use that instead. 
 
 
 note: the "x" in `npm` means "execute", i.e. we want to execute a node package.
