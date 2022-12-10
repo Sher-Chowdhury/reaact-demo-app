@@ -105,11 +105,11 @@ ref:
 Update the package.json file with the following scripts:
 
 ```shell
-npm set-script dev:start "node --watch src/server/server.js"
+npm pkg set scripts.dev:start="node --watch src/server/server.js"
 # dev mode is more verbose option, good for debugging
-npm set-script dev:bundler "webpack --watch --mode=development"
+npm pkg set scripts.dev:bundler="webpack --watch --mode=development"
 
 #  "prestart" is a reserved name, it auto-runs first when you do `npm start`
-npm set-script prestart "webpack --mode=production"
-npm set-script start "node src/server/server.js"
+npm pkg set scripts.prestart="webpack --mode=production"
+npm pkg set scripts.start="node src/server/server.js"
 ```
