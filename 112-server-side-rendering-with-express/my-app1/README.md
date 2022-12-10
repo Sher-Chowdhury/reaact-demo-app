@@ -66,7 +66,13 @@ Now need to tell [configure webpack](https://webpack.js.org/configuration):
 touch webpack.config.js
 cat webpack.config.js
 
+const path = require("path");
 module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist'),
+    },
     module: {
         rules: [
             {
@@ -81,4 +87,29 @@ module.exports = {
 };
 ```
 
+Here's what the these setting means. 
 
+
+`entry` - what is the starting point of our javascript app. 
+`output` - let you choose where to store the resulting output
+`output.path` - directory to store the resulting output js file. This has to be an absolute path. 
+`output.filname` - what to call the resulting file. 
+
+Note: based on the above, the output filepath is `$(pwd)/dist/main.js`
+
+ref: 
+- https://webpack.js.org/guides/getting-started/#using-a-configuration
+- https://webpack.js.org/configuration/
+
+
+Update the package.json file with the following scripts:
+
+```shell
+npm set-script dev:start "node --watch src/server/server.js"
+# dev mode is more verbose option, good for debugging
+npm set-script dev:bundler "webpack --watch --mode=development"
+
+#  "prestart" is a reserved name, it auto-runs first when you do `npm start`
+npm set-script prestart "webpack --mode=production"
+npm set-script start "node src/server/server.js"
+```
