@@ -30,10 +30,10 @@ mkdir src
 mkdir dist
 touch dist/main.js
 touch src/index.js
-mkdir dist/components
-mkdir dist/server
-touch dist/components/app.js
-touch dist/server/server.js
+mkdir src/components
+mkdir src/server
+touch src/components/app.js
+touch src/server/server.js
 
 tree . --charset ascii   
 .
