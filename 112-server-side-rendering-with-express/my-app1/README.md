@@ -113,3 +113,35 @@ npm pkg set scripts.dev:bundler="webpack --watch --mode=development"
 npm pkg set scripts.prestart="webpack --mode=production"
 npm pkg set scripts.start="node src/server/server.js"
 ```
+
+package.json now looks like:
+
+```shell
+$ cat package.json  
+{
+  "name": "my-app1",
+  "version": "1.0.0",
+  "description": "Ref - https://jscomplete.com/learn/1rd-reactful",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:start": "node --watch src/server/server.js",
+    "dev:bundler": "webpack --watch --mode=development",
+    "prestart": "webpack --mode=production",
+    "start": "node src/server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.75.0"
+  },
+  "devDependencies": {
+    "@webpack-cli/generators": "^3.0.1",
+    "webpack-cli": "^5.0.1"
+  }
+}
+```
