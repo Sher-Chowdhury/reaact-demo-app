@@ -4,7 +4,11 @@
   "description": "Ref - https://jscomplete.com/learn/1rd-reactful",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:start": "node --watch src/server/server.js",
+    "dev:bundler": "webpack --watch --mode=development",
+    "prestart": "webpack --mode=production",
+    "start": "node src/server/server.js"
   },
   "keywords": [],
   "author": "",
