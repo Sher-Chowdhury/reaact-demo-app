@@ -36,3 +36,7 @@ touch src/components/app.js
 touch src/server/server.js
 ```
 
+The resulting structure should look like:
+
+<img width="625" alt="image" src="https://user-images.githubusercontent.com/11390994/206868957-3001a5cb-effe-4e73-97ad-9e16079fe137.png">
+
