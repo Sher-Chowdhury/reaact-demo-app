@@ -60,7 +60,7 @@ So you have to tell babel which syntax types it needs to transform by setting th
 - `@babel/preset-env` - modern javascript (as opposed to the really old 2015 standard)
 - `@babel/preset-react` - react code, i.e. jsx syntax.
 
-Now need to tell configure webpack:
+Now need to tell [configure webpack](https://webpack.js.org/configuration):
 
 ```shell
 touch webpack.config.js
