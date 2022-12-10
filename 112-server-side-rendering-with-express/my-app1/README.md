@@ -34,22 +34,5 @@ mkdir src/components
 mkdir src/server
 touch src/components/app.js
 touch src/server/server.js
-
-tree . --charset ascii   
-.
-|-- dist
-|   |-- components
-|   |   `-- app.js
-|   |-- main.js
-|   `-- server
-|       `-- server.js
-|-- package-lock.json
-|-- package.json
-`-- src
-    `-- index.js
-
-4 directories, 7 files
-
-
 ```
 
