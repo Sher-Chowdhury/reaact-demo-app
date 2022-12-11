@@ -2,11 +2,14 @@ Ref:
 
 Create a CSR (Client Side Rendered) site:
 
-https://medium.com/swlh/back-to-basics-how-to-set-up-a-react-app-from-scratch-2020-134908e17490
+https://medium.com/swlh/back-to-basics-how-to-set-up-a-react-app-from-scratch-2020-134908e17490 (covered in my-app1)
+
+In csr, all the react code is packaged into a bundle.js file. all the bundle.js code is executed on the browser (i.e. csr) 
+
 
 Convert this CSR to SSR (Server Side Rendered):
 
-https://medium.com/javascript-in-plain-english/back-to-basics-server-side-rendering-a-react-app-using-express-js-6fab99db5770
+https://medium.com/javascript-in-plain-english/back-to-basics-server-side-rendering-a-react-app-using-express-js-6fab99db5770 (covered in my-app2)
 
 
 Using node version:
@@ -39,11 +42,11 @@ touch src/app.js
 mkdir server
 touch server/index.js
 
-cat server/index.js
-...
+touch babel.config.js
+touch webpack.config.js
 ```
 
-set `npm start`:
+set `npm start` and `npm run dev:start`:
 
 ```shell
 npm pkg set scripts.dev:start="node --watch server/index.js" 
