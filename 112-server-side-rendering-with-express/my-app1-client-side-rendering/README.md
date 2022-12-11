@@ -123,6 +123,10 @@ app.listen(port, ()=> {
 )
 ```
 
+Our express app simple servers up a static website only, since we're using `express.static()` middleware. In our case it simply sends the `index.html`
+along with it's dependencies (which in this example is just the bundle.js) to the browser. 
+
+
 Create the following files:
 ```
 touch babel.config.js
