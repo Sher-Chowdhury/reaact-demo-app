@@ -211,10 +211,11 @@ To generate the `bundle.js` we do:
 npm run dev:bundler
 ```
 
-To start our app, we do:
+To start our app, we do, one of:
 
 ```shell
 npm start
+npm run dev:start
 ```
 
 
