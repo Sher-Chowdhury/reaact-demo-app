@@ -1,25 +1,5 @@
-import express from "express";
-import ReactDOMServer from "react-dom/server";
-
-import App from "../components/app";
-
-const server = express();
-server.use(express.static("dist"));
-
-server.get("/", (req, res) => {
-    const initialMarkup = ReactDOMServer.renderToString(<App />);
-
-    res.send(`
-    <html>
-      <head>
-        <title>Sample React App</title>
-      </head>
-      <body>
-        <div id="app">${initialMarkup}</div>
-        <script src="/main.js"></script>
-      </body>
-    </html>
-  `)
-});
-
-server.listen(4242, () => console.log("Server is running..."));
+const express = require("express")
+let  app = express()
+app.get('/', (req, res) => res.send("HELLO FROM EXPRESS"));
+app.use(express.static('dist'))
+app.listen(3000,  () => console.log("Example app listening on port 3000!"));

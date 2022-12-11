@@ -2,5 +2,7 @@ import ReactDOM from "react-dom";
 
 import App from "./components/app";
 
-const container = document.getElementById("app");
-ReactDOM.hydrateRoot(container, <App />);
+const app = document.getElementById('app');
+
+ReactDOM.render(<h1>Develop. Preview. Ship. 🚀</h1>, app);
+

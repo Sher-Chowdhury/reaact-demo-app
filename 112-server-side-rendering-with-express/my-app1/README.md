@@ -1,4 +1,7 @@
-Ref - https://jscomplete.com/learn/1rd-reactful
+Ref: 
+- https://jscomplete.com/learn/1rd-reactful
+
+
 
 Using node version:
 
@@ -91,7 +94,7 @@ Here's what the these setting means.
 
 
 `entry` - what is the starting point of our javascript app. 
-`output` - let you choose where to store the resulting output
+`output` - let you choose where to store the resulting output. You can also configure multiple entries+outputs - https://webpack.js.org/concepts/output/
 `output.path` - directory to store the resulting output js file. This has to be an absolute path. 
 `output.filname` - what to call the resulting file. 
 

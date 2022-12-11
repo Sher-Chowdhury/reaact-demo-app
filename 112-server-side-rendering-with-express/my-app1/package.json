@@ -2,13 +2,12 @@
   "name": "my-app1",
   "version": "1.0.0",
   "description": "Ref - https://jscomplete.com/learn/1rd-reactful",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:start": "node --watch src/server/server.js",
     "dev:bundler": "webpack --watch --mode=development",
-    "prestart": "webpack --mode=production",
+    "prod:bundler": "webpack --mode=production",
     "start": "node src/server/server.js"
   },
   "keywords": [],

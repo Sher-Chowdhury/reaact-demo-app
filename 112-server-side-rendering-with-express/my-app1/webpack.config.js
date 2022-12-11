@@ -1,10 +1,9 @@
-import path from "path"
-
-const config = {
+const path = require("path");
+module.exports = {
     entry: './src/index.js',
     output: {
-        filename: 'main.js',
-        path: path.resolve(process.cwd(), 'dist'),
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist'),
     },
     module: {
         rules: [
@@ -18,5 +17,3 @@ const config = {
         ],
     },
 };
-
-export {config}
