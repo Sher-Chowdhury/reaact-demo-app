@@ -14,7 +14,7 @@ Using node version:
 ```shell
 $ nvm use stable
 $ node --version                                    
-v18.10.0
+v18.11.0
 ```
 
 start a new project and install packages:
@@ -26,6 +26,7 @@ npm init -y
 npm install express           # nodejs webserver software  
 npm install react react-dom   # these can also be installed as devDependencies
 npm install webpack webpack-cli # converts all the code into a single javascript file (bundle.js). 
+npm install babel-loader @babel/core @babel/preset-env @babel/preset-react # babel is used for converting jsx syntax to stadnard json
 ```
 
 
