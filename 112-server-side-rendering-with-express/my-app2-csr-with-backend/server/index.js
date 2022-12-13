@@ -13,10 +13,10 @@ const public_folder = path.join(__dirname, '..', 'public')
 app.use(express.static(public_folder))
 
 
-const serverRouter = require('../src/routes/petstoreRoutes')
+const serverRouter = require('../src/routes/ApiV1Routes')
 app.use(serverRouter)
 
-// Another middleware to redirect all routes (e.g. http://localhost/contact) to '/'
+// Another middleware to redirect all routes (that are not intercepted aboce) (e.g. http://localhost/contact) to '/'
 app.use((req, res,next) =>{
     res.redirect('/')
 })

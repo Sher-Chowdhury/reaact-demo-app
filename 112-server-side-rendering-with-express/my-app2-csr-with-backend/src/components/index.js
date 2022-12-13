@@ -16,6 +16,7 @@ function Counter(props) {
         <div>
             <h1>Hello, {props.firstName} {props.lastName}</h1>
             <button onClick={IncrementCounter}>{counter}</button>
+            <p1>The Random Word is: </p1>
         </div>
     )
 }
