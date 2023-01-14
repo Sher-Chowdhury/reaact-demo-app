@@ -1,3 +1,6 @@
+## my-app1
+
+
 ref - https://reactjs.org/docs/create-a-new-react-app.html#create-react-app
 
 https://www.npmjs.com/package/create-react-app
@@ -119,3 +122,16 @@ my-app
 you can now use `npm start` to see what the demo looks like. 
 
 `my-app/public/src/index.html` contains a div with the id "root". This is the starting point - https://reactjs.org/docs/rendering-elements.html#rendering-an-element-into-the-dom
+
+
+## my-app2
+
+The `create-react-app` comes with a lot of baggage which makes it harder to understand the inner workings of a react app. 
+
+That's why it's better to create a react app from scratch, so to better understand all the moving parts. 
+
+Here's the article I followed to create a very basic react app - https://medium.com/swlh/back-to-basics-how-to-set-up-a-react-app-from-scratch-2020-134908e17490
+
+## my-app3
+
+This is a more fuller example, ignore this for now. come back to it later. 
