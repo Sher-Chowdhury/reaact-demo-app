@@ -30,4 +30,7 @@ React can also do Server Side Rendered (SSR), in fact with React, you create an 
 
 - Client-Side-Rendered (CSR) only
 - Server-Side-Rendered (SSR) only
-- A combination of both, CSR and SSR
+- A combination of both, CSR and SSR - this gives the best of both worlds. 
+
+CSR can be slow for rendering the first page. So you can set up the first to render using ssr (including doing the initial data fetch), this will allow loading
+the csr's bundle.js to load in the background in the meantime. Then CSR can take over from that point onwards, where necessary. 
