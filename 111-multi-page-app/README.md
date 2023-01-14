@@ -12,7 +12,7 @@ Here we used a technology called "Handlebars". Handlebars is a templating engine
 Handlebars is an alternative to using React (and the `react-router-dom` package).  
 
 
-Here we use `express` to catch all the requests and direct to the main top level component. We also configure `express` to use handlebars. 
+Here we use `express` to catch all the requests and direct to the main top level component. We also configured `express` to use handlebars templating engine. 
 
 ```shell
 npm start
