@@ -2,8 +2,27 @@ ref - https://reactjs.org/docs/hello-world.html
 
 This is also a really good general guide of react - https://nextjs.org/learn/foundations/from-javascript-to-react 
 
-## my-app
-This is the same as 001, but with `src/index.js` updated to show "hello world"
+## my-app1
+This is the same as my-app2, in 001
+
+
+
+
+However this setup is a bit hard to do development work with, in the sense that everytime you make code change, you have to always take the following 
+steps to see your changes on the browser side:
+
+1. Rerun `npm run dev:bundler` to reload the updated bundle.js 
+2. Rerun `npm start`
+2. Reload the web page. 
+
+## my-app2
+
+Same as my-app1 but with some monitoring enabled that automates the running of steps 1 and 2 above. 
+
+Note have to use node 18 for node's `--watch` flag to work - https://nodejs.org/en/blog/release/v18.11.0/
+
+Then on 2 separated terminals, run steps 1 and 2, so that they stay running in the background. 
+
 
 
 
@@ -27,4 +46,6 @@ However you can debug the app via chrome:
 https://github.com/Sher-Chowdhury/host-react-app-on-github-pages
 
 See - https://github.com/gitname/react-gh-pages
+
+
 
