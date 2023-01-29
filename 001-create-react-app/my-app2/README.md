@@ -7,7 +7,7 @@ The main packages are:
 - express - in this example, we're only using express to serve a static html page, along with the html file's dependencies, 
             in particular the bundle.js file.
 
-In this example, nnce that express app delivered teh initial html file + bundle.js, it plays no further part, i.e. all future
+In this example, once that express app delivered teh initial html file + bundle.js, it plays no further part, i.e. all future
 page loads and handled by the bundle.js file on the client side, hence this app is an example of a client-side-rendered (csr) app. 
 
 To run this demo, do:
