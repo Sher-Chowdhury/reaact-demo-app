@@ -11,7 +11,7 @@ This is the same as my-app2, in 001
 However this setup is a bit hard to do development work with, in the sense that everytime you make code change, you have to always take the following 
 steps to see your changes on the browser side:
 
-1. Rerun `npm run dev:bundler` to reload the updated bundle.js 
+1. Rerun `npm run dev:bundler` to reload the updated bundle.js (bundle.js contains code that is executed on the client/browser side, i.e. client side rendering)
 2. Rerun `npm start`
 2. Reload the web page. 
 
@@ -21,9 +21,7 @@ Same as my-app1 but with some monitoring enabled that automates the running of s
 
 Note have to use node 18 for node's `--watch` flag to work - https://nodejs.org/en/blog/release/v18.11.0/
 
-Then on 2 separated terminals, run steps 1 and 2, so that they stay running in the background. 
-
-
+Then open 2 terminals, run steps 1 on the first terminal, and step 2 on the second terminal. Both of these terminals will stay running in the background. 
 
 
 ## Debugging React based apps
@@ -35,7 +33,7 @@ However you can debug the app via chrome:
 1. Run `npm start`, then open the app on chrome. 
 2. Open the app in chrome, e.g. - http://localhost:3000/
 3. Open the chrome developer tools
-4. Go to the sources tab, and you can add breakpoints their. 
+4. Go to the sources tab, and you can add breakpoints there. 
 5. Also all `console.log(...)` will appear in the consoles tab. 
 
 
