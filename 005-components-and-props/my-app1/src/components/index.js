@@ -1,12 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import ReactDOM from 'react-dom/client'; // This I think indicates that this app is a client-side-rendered (csr) app
 
 
+
+const root = ReactDOM.createRoot(document.getElementById('app'));
 
 const user = {
     firstName: 'Peter',
@@ -30,7 +27,3 @@ function myComponent(user) {
 
 // Notice how we called the component like, in the same way as a typical function
 root.render(myComponent(user));
-
-
-
-reportWebVitals();
