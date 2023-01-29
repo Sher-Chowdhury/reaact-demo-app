@@ -1,10 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom/client'; // This I think indicates that this app is a client-side-rendered (csr) app
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+const root = ReactDOM.createRoot(document.getElementById('app'));
 
 // The component's input parameter is called "props" by convention.
 function Welcome(props) {
@@ -26,9 +25,4 @@ root.render(
     </React.Fragment>
 );
 // jsx syntax must always contain a single top level tag. However the above has 2 top level "Welcome" tags. Therefore in this situation we used `<React.Fragment>` as a work around.
-
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// An alternative to using the <React.Fragment> tag, is to just use a <div> tag
