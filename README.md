@@ -3,7 +3,7 @@
 ref: 
 - https://reactjs.org/
 - https://reactjs.org/docs/hello-world.html
-
+- https://nextjs.org/learn/foundations/from-javascript-to-react
 
 
 React is used to describe user interfaces. Hence react is declarative. 
