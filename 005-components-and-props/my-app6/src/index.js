@@ -1,27 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// The component's input parameter is called "props" by convention.
 function Welcome(props) {
-    // let name = props.firstName + ' ' + props.lastName
+    let name = props.firstName + ' ' + props.lastName
 
     return (
         <h1>
-            Hello {props.title} {props.children}!
+            Hello {name}!
         </h1>
     )
 }
 
-// Noticed we used react.fragment - https://reactjs.org/docs/fragments.html
-// Notice how components are reusable, with the behaviour changing based on the attributes supplied.
-root.render(
-     <Welcome title="Mr">Clark Kent</Welcome>
-);
+// This shows how to nest components, i.e. 1 component calls another component.
+function App(){
+    return (
+        <div>
+            <Welcome firstName="Peter" lastName="Parker"/>
+            <Welcome firstName="Tony" lastName="Stark"/>
+            <Welcome firstName="Steve" lastName="Rogers"/>
+        </div>
+    )
+
+}
+
+root.render(App());
 
 
 // If you want to start measuring performance in your app, pass a function

@@ -11,11 +11,11 @@ as opposed to the approach used in the my-app1 demo. This approach gives the imp
 We can supply arguments to our components. That's done by specifying attributes for our custom html tags. 
 react will send these attributes to the component in the form of a single object, called "properties", aka props. 
 
-### my-app3-prop-types
+### my-app4
 Ref - https://reactjs.org/docs/typechecking-with-proptypes.html
 This shows how to specify data types for prop settings, and how to make them required. 
 
-### my-app4
+### my-app5
 a component can be written in the form of a class, rather than a function.
 
 Note: The React team has recommended to always write all components in the form of functions rather than classes. 
@@ -27,12 +27,12 @@ As far as react is concerned, function based and classed based functions are jus
 
 Here's a quick guide on how to convert a function to a class - https://reactjs.org/docs/state-and-lifecycle.html#converting-a-function-to-a-class
 
-### my-app5
+### my-app6
 this is another example of how components are reusable, and how to nest component calls. This allows for a tree-like approach 
 to organsizing and structuring your components. In other words compopents can be broken down into small components. 
 
 
-### my-app6
+### my-app7
 This shows the special `children` props property, which holds the content of input passed in by calling components using the syntax:
 
 ```
