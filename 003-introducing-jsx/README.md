@@ -34,8 +34,9 @@ Alternatively you can use the `<React.Fragment>` approach - https://reactjs.org/
 
 
 So:
-
-jsx code --(babel)--> javascript code --(react-dom)--> html code. 
+<pre>
+jsx code  --(babel)-->  javascript code  --(react-dom)-->  html code. 
+</pre>
 
 The [react-dom package](https://www.npmjs.com/package/react-dom) takes javascript code, and constructs them into html (Document Object Model) for web browsers.
 
