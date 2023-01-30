@@ -15,24 +15,14 @@ react will send these attributes to the component in the form of a single object
 Ref - https://reactjs.org/docs/typechecking-with-proptypes.html
 This shows how to specify data types for prop settings, and how to make them required. 
 
+
+
 ### my-app5
-a component can be written in the form of a class, rather than a function.
-
-Note: The React team has recommended to always write all components in the form of functions rather than classes. 
-
-This class needs to be a subclass of the [React.Component class](https://reactjs.org/docs/react-component.html), and as a minimum this subclass needs to define
-a method called [render()]( https://reactjs.org/docs/react-component.html#overview). The `render()` method needs to return some jsx syntax. 
-
-As far as react is concerned, function based and classed based functions are just equivalent of eachother. 
-
-Here's a quick guide on how to convert a function to a class - https://reactjs.org/docs/state-and-lifecycle.html#converting-a-function-to-a-class
-
-### my-app6
 this is another example of how components are reusable, and how to nest component calls. This allows for a tree-like approach 
 to organsizing and structuring your components. In other words compopents can be broken down into small components. 
 
 
-### my-app7
+### my-app6
 This shows the special `children` props property, which holds the content of input passed in by calling components using the syntax:
 
 ```
